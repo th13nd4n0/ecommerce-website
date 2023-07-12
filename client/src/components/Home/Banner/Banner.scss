@@ -1,0 +1,126 @@
+@import "../../../css-config/mixins.scss";
+
+.hero-banner {
+    padding: 40px 0;
+    position: relative;
+    background-color: white;
+    @include md {
+        height: calc(100vh - 100px);
+    }
+    .content {
+        height: 100%;
+        display: flex;
+        justify-content: flex-end;
+
+        flex-direction: column;
+        margin: 0 auto;
+        @include md {
+            flex-direction: row;
+            max-width: 1200px;
+        }
+        
+        .banner-img {
+            position: relative;
+            z-index: 9;
+            width: 200px;
+            height: 200px;
+            margin-bottom: 20px;
+            @include xs {
+                margin-top: 20px;
+                width: 150px;
+                height: 150px;
+                left: calc(50vh - 300px);
+            }
+            @include sm {
+                margin-top: 20px;
+                width: 350px;
+                height: 350px;
+                justify-content: center;
+            }
+            @include md {
+                width: 550px;
+                height: 550px;
+                margin-right: 10px;
+                margin-top: 20px;
+                margin-bottom: 70px;
+            }
+            @include xxl {
+                width: 650px;
+                height: 650px;
+                margin-right: 0;
+                margin-top: 0;
+            }
+        }
+        .text-content {
+            h1{
+                background: linear-gradient(to bottom right, #3a2ade, #8c82ec);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                font-size: 80px;
+                font-weight: 700;
+                line-height: 1;
+                padding-bottom: 20px;
+                margin-top: 0;
+                margin-bottom: 0;
+                @include xs {
+                    font-size: 40px;
+                }
+                @include sm {
+                    font-size: 60px;
+                }
+                @include md {
+                    font-size: 85px;
+                }
+            }
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            align-items: left;
+            @include md {
+                position: absolute;
+                left: 50px;
+                top: 40%;
+                transform: translateY(-50%);
+            }
+            @include xxl {
+                left: 0;
+            }
+            .ctas{
+                display: flex;
+                justify-content: center;
+                .banner-cta {
+                    font-size: 18px;
+                    font-weight: 600;
+                    margin-top: 30px;
+                    padding: 10px 30px;
+                    cursor: pointer;
+                    @include xs {
+                        font-size: 15px;
+                    }
+                    &.v1 {
+                        border: 6px solid transparent;
+                        background: black;
+                        color: white;
+                        box-shadow: 8px 6px 8px 3px #6356e5;
+                        margin-right: 40px;
+                        &:hover {
+                            box-shadow:0 0 0 0 white;
+                        }
+                    }
+                    &.v3{
+                        padding-left: 0;
+                        margin-left: 0;
+                    }
+                    &.v2{
+                        padding-right: 5px;
+                        margin-right: 0;
+                        &:hover {
+                            margin-right: 20px;
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+}
