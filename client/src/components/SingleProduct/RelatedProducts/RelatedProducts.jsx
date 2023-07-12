@@ -1,7 +1,12 @@
+import Products from "../../Products/Products";
 import "./RelatedProducts.scss";
 
 const RelatedProducts = () => {
-    return (<div>RelatedProducts</div>);
+    return (
+        <div className="related-products">
+            <Products headingText="Related Products"/>
+        </div>
+    );
 };
 
 export default RelatedProducts;
