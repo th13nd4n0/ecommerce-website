@@ -2,7 +2,6 @@ import { useState, useContext } from "react";
 
 import RelatedProducts from "./RelatedProducts/RelatedProducts";
 import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn, FaPinterest, FaCartPlus } from "react-icons/fa";
-import prod from "../../assets/products/sneaker-prod1.jpg";
 
 import "./SingleProduct.scss";
 

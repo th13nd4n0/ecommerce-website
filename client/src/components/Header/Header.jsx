@@ -16,6 +16,7 @@ const Header = () => {
     const [scrolled, setScrolled] = useState(false);
     const [showCart, setShowCart] = useState(false);
     const [showSearch, setShowSearch] = useState(false);
+    const [showHome, setShowHome] = useState(true);
     const {cartCount} = useContext(Context);
     const navigate = useNavigate();
 
@@ -37,11 +38,23 @@ const Header = () => {
             <header className={`main-header ${scrolled ? 'sticky-header' : ""}`}>
                 <div className="header-content">
                     <ul className="left">
-                        <li onClick={() => navigate("/")}>Home</li>
-                        <li>About</li>
-                        <li>Categories</li>
+                        <li onClick={() => {
+                            navigate("/");
+                            setShowHome(true);
+                            }}>Home</li>
+                        <li onClick={() => {
+                            navigate("/About");
+                            setShowHome(false);
+                        }}>About</li>
+                        {showHome && <li onClick={() => {
+                            document.getElementsByTagName('img')[1].scrollIntoView();
+                            window.scrollBy(0,-100);
+                        }}>Categories</li>}
                     </ul>
-                    <div className="center" onClick={() => navigate("/")}>
+                    <div className="center" onClick={() => {
+                            navigate("/");
+                            setShowHome(true);
+                            }}>
                         <h1>SLIPPER</h1>
                     </div>
                     <div className="right">

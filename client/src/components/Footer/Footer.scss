@@ -45,6 +45,14 @@
                     cursor: pointer;
                 }
             }
+            a {
+                text-decoration: none;
+                &.text {
+                    display: block;
+                    margin-bottom: 10px;
+                    cursor: pointer;
+                }
+            }
         }
     }
     .bottom-bar {

@@ -1,9 +1,11 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import "./Footer.scss";
 import { FaLocationArrow, FaMobileAlt, FaEnvelope } from "react-icons/fa";
 import Payment from "../../assets/payments.png";
 
 const Footer = () => {
+    const navigate = useNavigate();
     return (
         <footer className="footer">
             <div className="footer-content">
@@ -28,19 +30,18 @@ const Footer = () => {
                 </div>
                 <div className="col">
                     <div className="title">Categories</div>
-                    <span className="text">Boots</span>
-                    <span className="text">Sandals</span>
-                    <span className="text">Sneakers</span>
-                    <span className="text">Slippers</span>
+                    <span className="text" onClick={()=>navigate("/category/1")}>Boots</span>
+                    <span className="text" onClick={()=>navigate("/category/2")}>Sandals</span>
+                    <span className="text" onClick={()=>navigate("/category/3")}>Sneakers</span>
+                    <span className="text" onClick={()=>navigate("/category/4")}>Slippers</span>
                 </div>
                 <div className="col">
                     <div className="title">Pages</div>
-                    <span className="text">Home</span>
-                    <span className="text">About</span>
-                    <span className="text">Privacy Poilcy</span>
-                    <span className="text">Returns</span>
-                    <span className="text">Terms & Conditions</span>
-                    <span className="text">Contact Us</span>
+                    <span className="text" onClick={()=>navigate("/About")}>About</span>
+                    <a className="text" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Privacy Poilcy</a>
+                    <a className="text" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Returns</a>
+                    <a className="text" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Terms & Conditions</a>
+                    <a className="text" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Contact Us</a>
                 </div>
             </div>
             <div className="bottom-bar">
