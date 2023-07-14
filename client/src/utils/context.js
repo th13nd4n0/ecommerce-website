@@ -14,6 +14,7 @@ const AppContext = ({ children }) => {
     const [recProd, setRecProd] = useState();
     const [recProd2, setRecProd2] = useState();
     const [recProd3, setRecProd3] = useState();
+    const [visited, setVisited] = useState(false);
 
     useEffect(() => {
         window.scrollTo(0, 0);
@@ -80,6 +81,8 @@ const AppContext = ({ children }) => {
                 setRecProd2,
                 recProd3,
                 setRecProd3,
+                visited,
+                setVisited,
             }}
         >
             {children}
