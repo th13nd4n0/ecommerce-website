@@ -1,6 +1,6 @@
 # Shoe E-Commerce Website
 
-Project Website: [[https://theslippercompany.web.app/]](https://theslippercompany.web.app/)
+Project Website: [https://theslippercompany.web.app/](https://theslippercompany.web.app/)
 
 # **Preview**
 
