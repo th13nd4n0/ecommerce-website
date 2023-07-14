@@ -29,7 +29,6 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "homepage": "/theslippercompany.web.app/",
   "eslintConfig": {
     "extends": [
       "react-app",
