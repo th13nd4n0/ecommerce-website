@@ -11,6 +11,10 @@ const AppContext = ({ children }) => {
     const [cartSubTotal, setCartSubTotal] = useState(0);
     const location = useLocation();
 
+    const [recProd, setRecProd] = useState();
+    const [recProd2, setRecProd2] = useState();
+    const [recProd3, setRecProd3] = useState();
+
     useEffect(() => {
         window.scrollTo(0, 0);
     }, [location]);
@@ -69,6 +73,13 @@ const AppContext = ({ children }) => {
                 handleAddToCart,
                 handleRemoveToCart,
                 handleCartProductQuantity,
+
+                recProd,
+                setRecProd,
+                recProd2,
+                setRecProd2,
+                recProd3,
+                setRecProd3,
             }}
         >
             {children}

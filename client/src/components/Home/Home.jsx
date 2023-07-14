@@ -11,6 +11,7 @@ import { Context } from "../../utils/context";
 const Home = () => {
 
     const {categories, setCategories, products, setProducts} = useContext(Context);
+    const {recProd, recProd2, recProd3} = useContext(Context);
 
     useEffect(() => {
         getProducts();
@@ -39,8 +40,10 @@ const Home = () => {
                     <Category categories={categories} />
                     <Products 
                         headingText="Recommened Products"
-                        products={products}
+                        products={recProd}
                     />
+                    <Products innerPage={true} products={recProd2}/>
+                    <Products innerPage={true} products={recProd3}/>
                 </div>
             </div>
         </div>
