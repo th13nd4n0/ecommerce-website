@@ -1,4 +1,5 @@
-import myGif from "../../assets/about.gif";
+import ReactPlayer from 'react-player';
+import myMov from "../../assets/about.MOV";
 import AboutImg from "../../assets/about-img.png";
 import AboutImg2 from "../../assets/abt-img2.png";
 import AboutImg3 from "../../assets/abt-img3.png";
@@ -65,7 +66,7 @@ const About = () => {
                 </div>
 
                 <div className="gif-content">
-                    <img src={myGif} alt=""/>
+                    <ReactPlayer url={myMov} controls={true} />
                 </div>
 
             </div>
