@@ -12,7 +12,7 @@ const Newsletter = () => {
                     <input type="text" placeholder="john.doe@email.com"/>
                     <button>Subscribe</button>
                 </div>
-                <div className="text">Will be used in accordance with out Privacy Poilcy</div>
+                <div className="text">Will be used in accordance with our Privacy Poilcy</div>
                 <div className="social-icons">
                     <div className="icon">
                         <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><FaFacebookF size={16} color='white'/></a>
