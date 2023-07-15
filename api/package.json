@@ -14,6 +14,7 @@
     "@strapi/plugin-users-permissions": "4.11.5",
     "@strapi/strapi": "4.11.5",
     "better-sqlite3": "8.0.1",
+    "strapi-connector-firestore": "^3.0.0-alpha.47",
     "stripe": "^12.13.0"
   },
   "author": {
